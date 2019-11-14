@@ -103,8 +103,8 @@
 		<dependency>
 			<groupId>com.sparkframework</groupId>
 			<artifactId>spark-core</artifactId>
+			<systemPath>/Users/cdz/IdeaProjects/ZTuoExchange_framework/jar/spark-core-2.6.0.jar</systemPath>
 			<scope>system</scope>
-			<systemPath>D:/gitee_workspace/ZTuoExchange_framework/jar/spark-core-2.6.0.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
