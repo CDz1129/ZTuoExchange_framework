@@ -98,12 +98,12 @@ public class SmsProviderController {
             if (expire < 600 && expire > 540) {
                 return error(msService.getMessage("SEND_CODE_FAILURE_ONE"));
             }
-                 result = smsProvider.sendVerifyMessage(phone, randomCode);
-            if (result.getCode() == 0) {
+//                 result = smsProvider.sendVerifyMessage(phone, randomCode);
+//            if (result.getCode() == 0) {
                 logger.info("短信验证码:{}", randomCode);
                 valueOperations.set(key, randomCode, 10, TimeUnit.MINUTES);
                 return success(msService.getMessage("SEND_CODE_SUCCESS") + phone);
-            }
+//            }
         } catch (Exception e) {
             e.printStackTrace();
         }
